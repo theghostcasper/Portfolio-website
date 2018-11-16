@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hazim | Full stack web developer</title>
+		<!-- Full page library For displaying pages as slides-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/vendors/easings.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.extensions.min.js"></script>
+		<!-- Jquery library and popper.js to use with bootstrap.-->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<!-- Bootstrap css and javascript -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<!-- The simplebar library for scrollbar tweaks-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+		<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
+		<!-- custom font -->
+		<link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+		<!-- custom styles -->
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<header id="header">
+			<div class="pos-f-t">
+				<nav class="navbar navbar-dark">
+					<a class="navbar-brand" href="#"><img src="https://c1.staticflickr.com/6/5034/7160430254_5b7d0bb5b6_b.jpg" width=45 alt="logo"></a>
+					<button class="navbar-toggler mt-3" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+				</nav>
+				<div class="collapse" id="navbarToggleExternalContent">
+					<ul class="navbar-nav mr-auto  mt-lg-0">
+						<li class="nav-item active mt-2">
+							<a class="nav-link hvr-shutter-in-vertical" href="#Home">About <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item mt-2">
+							<a class="nav-link hvr-shutter-in-vertical" href="#Portfolio">Portfolio</a>
+						</li>
+						<li class="nav-item mt-2">
+							<a class="nav-link hvr-shutter-in-vertical" href="#Contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</header>
+		<div id="fullpage">
+			<section class="section active" id="section0">
+				<!-- First section: contains the About -->
+				<h2>Hello, my name is Hazem</h2>
+				<div class="container contact-about_page">
+					<h4>I am an Engineering student at MSA University.</h4>
+					<h4>When I'm not studying, I enjoy learning about web development. </h4>
+					<h4>I enjoy working with Javascript, PHP and Python.</h4>
+					<h4>Feel free to take a look at my latest projects on my <a href="#Portfolio" class="hvr-shutter-in-vertical">portfolio page.</a></h4>
+					<h4>When I'm not doing either, I like to drink tea and watch a movie.</h4>
+				</div>
+			</section>
+			<section class="section" id="section1">
+				<!--Second section: Portfolio -->
+				<h2>Full stack developer portfolio</h2>
+				<div class=" container   portfolio-page">
+					<p>From Web Components and UI/UX animations to Angular websites. Check out my latest web software development portfolio projects.</p>
+					<!-- here the flexbox of images that are scrollable. articles. -->
+					<div data-simplebar class="normal-scroll">
+						<div class="portfolio-items">
+							<article>
+								<div class="card">
+									<img class="card-img-top" src="img/arcade_game.png" height=180 " alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title">Arcade game</h5>
+										<p class="card-text">A cool arcade game, where player controls the champion using keyboard to avoid obstacles.</p>
+										<a href="#" class="btn btn-primary">Play</a>
+									</div>
+								</div>
+							</article>
+							<article>
+								<div class="card">
+									<img class="card-img-top" src="img/mono-clone.png" height=180 " alt="website clone">
+									<div class="card-body">
+										<h5 class="card-title">Mono Website clone</h5>
+										<p class="card-text">A simple clone for a website with an image gallery.</p>
+										<a href="#" class="btn btn-primary">Visit Mono</a>
+									</div>
+								</div>
+							</article>
+							<article>
+								<div class="card" style="width: 18rem;">
+									<img class="card-img-top" src="img/foodstore.png" alt="foodstore website">
+									<div class="card-body">
+										<h5 class="card-title">Food Store</h5>
+										<p class="card-text">Great store website for selling food products. It has a cart. Also uses Api to search for the food you need in other restraunts.</p>
+										<a href="#" class="btn btn-primary">visit foodstore</a>
+									</div>
+								</div>
+							</article>
+							<article>
+								<div class="card">
+									<img class="card-img-top" src="img/chatapp.png" height=180 " alt="Chat application">
+									<div class="card-body">
+										<h5 class="card-title">Chat application</h5>
+										<p class="card-text">This application uses Node.js, express along with web sockets to create an amazing real-time webchat application.</p>
+										<a href="#" class="btn btn-primary">Visit chatapp</a>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<!--Third section: Contact -->
+				<h2>Contact section</h2>
+				<div class="container contact-about_page">
+					<h4>If you have any issues while coding</h4>
+					<h4>Or if you've an idea in mind, and want to make it happen.</h4>
+					<h4>Even if you have nothing in mind,</h4>
+					<h4>Feel free to <a href="mailto:hazimmaragy@gmail.com" class="hvr-shutter-in-vertical">Contact me</a>, we can drink a cup of tea together and discus your concerns in detail.</h4>
+					<h4><br><a href="mailto:hazimmaragy@gmail.com" class="hvr-shutter-in-vertical">hazimmaragy@gmail.com</a></h4>
+				</div>
+			</section>
+		</div>
+		<script src="js/app.js"></script>
+	</body>
+</html>
